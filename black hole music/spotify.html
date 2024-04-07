@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Spotify</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;500&display=swap');
+              *{
+                margin: 0;
+                padding: 0;
+                font-family: 'Heebo' sans-serif;
+            }
+            body{
+                background-color: gray;
+                background-color: rgba(0, 0, 0, 0.8); 
+                color: rgba(0, 0, 0, 0.8);
+            }
+            .side{
+                display: flex;
+                position: relative;
+            }
+            .side .nav{
+                width: 200px;
+                height: 100%;
+                background: black;
+                padding: 60px 0px;
+                position: fixed;
+            }
+            .side .nav h2{
+                text-align: center;
+                margin-bottom: 30px;
+            }
+            .img{
+                width: 50px;
+                align-items: center;
+                margin: 70px;
+            }
+            .side .nav ul li{
+                padding: 15px;
+            }    
+            .side .nav ul li a{
+                color: #bdb8d7;
+                text-decoration: none;
+            }
+            .side .nav ul li a{
+                width: 25px;
+                height: 50px;
+                text-align: center;
+            }
+            .side .nav ul li:hover{
+                background-color: white;
+            }
+            .side .nav ul li:hover a{
+                transform: translateX(-50%);
+                color: black;
+            }
+            .main-container {
+                margin-left: 200px;
+                margin-bottom: 100px;
+            }
+            .topbar {
+                display: flex;
+                justify-content: space-between;
+                background-color: #101010;
+                padding: 14px 30px;
+            }
+            .topbar .navbar {
+                display: flex;
+                align-items: center;
+            }
+            .topbar .navbar ul {
+                list-style: none;
+            }
+            .topbar .navbar ul li {
+                display: inline-block;
+                margin: 0px 8px;
+                width: 70px;
+            }
+            .topbar .navbar ul li a {
+                color: #b3b3b3;
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 14px;
+                letter-spacing: 1px;
+            }
+            .topbar .navbar ul li a:hover,
+            .topbar .navbar ul li a:active,
+            .topbar .navbar ul li a:focus {
+                color: #ffffff;
+                font-size: 15px;
+            }
+            .topbar .navbar ul li.divider {
+                color: #ffffff;
+                font-size: 26px;
+                margin: 0px 20px;
+                width: auto;
+            }
+            .topbar .navbar button {
+                background-color: #ffffff;
+                color: #000000;
+                font-size: 16px;
+                font-weight: bold;
+                padding: 14px 30px;
+                border: 0px;
+                border-radius: 40px;
+                cursor: pointer;
+                margin-left: 20px;
+            }
+            .topbar .navbar button:hover,
+            .topbar .navbar button:active,
+            .topbar .navbar button:focus {
+                background-color: #f2f2f2;
+            }
+            h3{
+                padding: 20px;
+                color: white;
+            }
+            p{
+                color: white;
+            }
+            #music-grid {
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                grid-gap: 10px;
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+
+            .track {
+                position: relative;
+                text-align: center;
+                color: #000000;
+            }
+
+            .track img {
+                width: 100%;
+                height: 200px;
+                transition: transform .2s;
+                border: 2px solid black;
+                box-shadow: 2px 2px 5px 2px black
+            }
+            .track img:hover{
+                background-color: aquamarine;
+                transform: scale(1.1);
+                transition: 0.5s;
+            }
+
+            .track-info {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                background-color: rgba(0, 0, 0, 0.5);
+                color: white;
+                padding: 10px;
+            }
+            h2{
+                color: #b3b3b3;
+            }
+
+    
+            </style>
+    </head>
+    <body>
+        <div class="side">
+            <div class="nav">
+                <h2><img src="img/spotifylogo.png" alt="" class="img">SPOTIFY</h2>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Search</a></li>
+                    <li><a href="">Your Library</a></li>
+                    <li><a href="">Playlist</a></li>
+                    <li><a href="">Liked songs</a></li>
+                    
+                </ul>
+        
+            </div>
+            </div>
+            <div class="main-container">
+                <div class="topbar">
+                    <div class=>
+                    <button type="button" class=""></button>
+                    <button type="button" class=""></button>
+                </div>
+    
+                <div class="navbar">
+                <ul>
+                    <li>
+                        <a href="#">Premium</a>
+                    </li>
+                    <li>
+                        <a href="#">Support</a>
+                    </li>
+                    <li>
+                        <a href="#">Download</a>
+                    </li>
+                    <li class="divider">|</li>
+                    <li>
+                        <a href="#">Sign Up</a>
+                    </li>
+                    </ul>
+                    <button type="button">Log In</button>
+                </div>
+                </div>
+                <h3>TRENDING</h3>
+                <div id="music-grid">
+                    <div class="track">
+                        <img src="img/terepyaarme.jpg" alt="Track 1">
+                        <h3>Tere Pyaar Mein</h3>
+                        <p> Pritam| Arijit, Nikhita | Amitabh</p>
+                    </div>
+                    <div class="track">
+                        <img src="img/oops.jpg" alt="Track 2">
+                        <h3>OOPS</h3>
+                        <p>KING, ZAHRAH S KHAN</p>
+                    </div>
+                    <div class="track">
+                        <img src="img/TERAZIKR.webp" alt="Track 3">
+                        <h3>Tera Zikr</h3>
+                        <p> Darshan Raval </p>
+                    </div>
+                    <div class="track">
+                        <img src="img/jashnebhara.jpg" alt="Track 3">
+                        <h3>Jashn-E-Bahaaraa</h3>
+                        <p>A. R. Rahman|Javed A</p>
+                    </div>
+                    <div class="track">
+                        <img src="img/terigalliyan.jpg" alt="Track 3">
+                        <h3>Galliyan</h3>
+                        <p>Ankit Tiwari</p>
+                    </div>
+                    <div class="track">
+                        <img src="img/maanmerijann.png" alt="Track 3">
+                        <h3>Maan Meri Jaan</h3>
+                        <p>King</p>
+                    </div>
+                    <div class="track">
+                        <img src="img/tujanena.jpg" alt="Track 3">
+                        <h3>Tu Jaane Na</h3>
+                        <p> Atif Aslam|Pritam</p>
+                    </div>
+                    <div class="track">
+                        <img src="img/zarasa.jfif" alt="Track 3">
+                        <h3>Zara Sa</h3>
+                        <p>|KK|Pritam|Sayeed Quadri|Mahesh Bhatt</p>
+                    </div>
+                    <div class="track">
+                        <img src="img/givemesunshine.jpg " alt="Track 3">
+                        <h3>Give Me Some Sunshine</h3>
+                        <p>Suraj Jagan | Shantanu Moitra</p>
+                    </div>
+                    <div class="track">
+                        <img src="img/terahonelgahu.jpg" alt="Track 3">
+                        <h3>Tera Hone Laga Hoon</h3>
+                        <p> Atif Aslam|Pritam</p>
+                    </div>
+                    <div class="track">
+                        <img src="img/khavikhavi.jfif" alt="Track 3">
+                        <h3>Kabhi Kabhi Aditi Zindagi </h3>
+                        <p>Kabhi Kabhi Aditi Zindagi </p>
+                    </div>
+                    <div class="track">
+                        <img src="img/GUZARISH.jpg" alt="Track 3">
+                        <h3>Guzarish</h3>
+                        <p>Asin </p>
+                    </div>
+                    <div class="track">
+                        <img src="img/ASHIQUI2.jfif" alt="Track 3">
+                        <h3>Sunn Raha Hai Na Tu </h3>
+                        <p>Ankit Tiwari</p>
+                    </div>
+                    </div>
+            
+            
+            </body>
+        </html>

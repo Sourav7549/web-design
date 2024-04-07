@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,3),transparent),url(img/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 0 8%;
+    position: relative;
+}
+nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+    
+}
+nav ul{
+    flex: 1;
+    text-align: right;
+    padding-right: 30px;
+
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width:  0%;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    transition: width 0.3s;
+}
+nav ul li a:hover::after{
+    width: 50%;
+
+}
+.text-box{
+    color: #fff;
+    position: absolute;
+    bottom: 8%;
+}
+.text-box h1{
+    width: 100%;
+    height: 80px;
+    font-size: 80px;
+    -webkit-text-stroke: 2px salmon;
+    color: transparent;
+}
+.text-box p{
+    height: 60px;
+    font-size: 40px;
+    font-weight: 450;
+}
+.text-box h3{
+    font-size: 40px;
+    font-weight: 500;
+}
+.text-box .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.text-box a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-right: 20px;
+    border: 2px solid wheat;
+}
+body{
+    font-family: "Roboto" sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(img/lodig3.jpg);
+    background-size: cover;
+}
+.form{
+    background: rgba(0, 0,0,0.6);
+    padding: 50px 18px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 0 rgba(0, 0,0,0.6); 
+}
+.input{
+    display: block;
+    padding: 17px 15px;
+    margin: 20px 15px;
+    background: rgba(0, 0,0,0.3);
+    border: rgba(0, 0,0,0.2) solid;
+    outline: none;
+    border-radius: 25px;
+    width: 200px;
+    color: #ffd423;
+    transition: 0.6s border-color;
+}
+.input:focus{
+    border-color: #ffd423;
+}
+.form h1{
+    text-align: center;
+    color: aquamarine;
+    letter-spacing: 4px;
+    padding: 5px;
+}
+.btn{
+    padding: 15px;
+    width: 200px;
+    margin: 6px 15px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+    background: #ffd423;
+    transition: 1s;
+    float: right;
+}
+.btn:hover{
+    background: aquamarine;
+}
+body{
+    background-color: black;
+}
+
+
